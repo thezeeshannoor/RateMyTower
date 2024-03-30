@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/03e163adb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Search</title>
+</head>
+    <title>Search</title>
+</head>
+
+<body>
+
+    <section id="Search">
+        <!--  Second navbar -->
+        <!--  Second navbar -->
+        <div class="logoDiv">
+            <div class="logoMobile"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+            <div class="searchMobile">
+                <input type="search" placeholder="Search Towers,Areas..."/>
+                <div class="searchDivIcon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                 </div>
+    
+            </div>
+            <div id="menu"><div></div><div></div><div></div></div>
+        </div>
+        <div class="nav secondNav listings" id="nav">
+    
+            <div class="navChilds">
+                <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30">RateMyTower</div>
+                <div class="search">
+                    <input type="search" placeholder="Search Towers,Areas..." />
+                    <div class="searchDivIcon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+    
+                </div>
+                <div> <a href="index.html">Home</a></div>
+                    <div><a href="search.html">Search</a></div>
+                    <div><a href="review.html">Review</a></div>
+                    <div><a href="listings.html">Listing's</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="faq.html">Faq's</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+            </div>
+            <button class="loginBtn"><a href="./login.html">Login</a> </button>
+                <!-- <img src="./loginbtn.jpeg"> -->
+        </div>
+      
+        <section class="searchTwr">
+          <div class="topSecBg">
+            <div class="radioDiv">
+                <div><span>What are you searching for?</span></div>
+                <div><input type="radio" name="radio"> <label for="">Towers</label></div>
+                <div> <input type="radio" name="radio"> <label for="">Roommates</label> </div>
+            </div>
+            <div><span class="cru">Home > Dubai > </span>Dubai Marina</div>
+            <div class="filDiv">
+                <button id="filter"> <img src="icons/filter.png" alt=""> Filters</button>
+                <button id="reviews">Reviews <img src="icons/Vectorr.png" alt=""></button>
+                <button id="list">List <img src="icons/Vectorr.png" alt=""></button>
+                <button id="map">Map <img src="icons/Vectorr.png" alt=""></button>
+              
+                <button id="rent">Max Rent <img src="icons/Vectorr.png" alt=""></button>
+                <button id="iq_index">IQ Index <img src="icons/Vectorr.png" alt=""></button>
+            </div>
+
+            <div id="filterMenu">
+                <div class="rating">
+                    <h3>Rating range:</h3>
+                    <div class="boxes">
+                        <div class="boxPos" id="box1"><div class="box" >1.0</div> <div class="diamond"></div></div>
+                        <div class="boxPos" id="box2"><div class="box" >2.0</div> <div class="diamond"></div></div>
+                        <div class="boxPos" id="box3"><div class="box" >3.0</div> <div class="diamond"></div></div>
+                        <div class="boxPos" id="box4"><div class="box" >4.0</div> <div class="diamond"></div></div>
+                        <div class="boxPos" id="box5"><div class="box" >5.0</div> <div class="diamond"></div></div>
+                    </div>
+                    <div class="range"> <input id="range" type="range" min="1.0" max="5.0" value="0" oninput="rangeValue.innerText = this.value"><p id="rangeValue">1.0</p></div>
+                    
+       
+                </div>
+               
+                <div class="filterBy">
+                    <hr>
+                    <h3>Filtered by:</h3>
+    
+                    <div class="checkBox">
+                        <div class="check"> <input type="checkbox"> Overall </div>
+                        <div class="check"> <input type="checkbox"> Community </div>
+                        <div class="check"> <input type="checkbox"> Value </div>
+                        <div class="check"> <input type="checkbox"> Maintenance </div>
+                        <div class="check"> <input type="checkbox"> Access </div>
+                        <div class="check"> <input type="checkbox"> Amenities </div>
+                        <div class="check"> <input type="checkbox"> Noise </div>
+                        <div class="check"> <input type="checkbox"> Transport </div>
+                        <div class="check"> <input type="checkbox"> Facilities </div>
+                        <div class="check"> <input type="checkbox"> Pet Friendly </div>
+    
+                    </div>
+                </div>
+                <div class="display">
+                    <hr>
+                    <h3>Display:</h3>
+                    <p>Places with no rating or reviews</p>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                      </label>
+                    
+                </div>
+                <button class="saveSearch">Save Search</button>
+            </div>
+    
+            <div>
+                <strong>196 Towers in Dubai Marina</strong>
+                <p class="txt">Appartment Reviews and Prices</p>
+            </div>
+          </div>
+           
+
+            <div class="searchAllContent">
+            <section class="simiTwr searchPage">
+                <div class="map" id="mapSec">
+                    <img src="images/Map.jpg" alt="" id="mapImg">
+                </div>
+    
+                <div class="twrs searchScroll">
+                    <div class="twr">
+                        <div class="imgPos">
+                            <img class="imgShif" src="./images/image1.png">
+                            <div>
+                                <div class="imgTxt">
+                                    <div>
+                                        <div class="bomb"><img src="icons/Vector.png" alt="" width="10"><b>popular</b></div>
+                                        <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                                BUILDING</b></div>
+                                    </div>
+                                    <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                                </div>
+                                <div class="arrow">
+                                    <div class="leftArrow">
+                                        <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                            <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                    </div>
+    
+    
+                                </div>
+                            </div>
+                            <div class="twrTxt">
+                                <div><img class="loc" src="icons/location.png" alt="">
+                                    <p> No. 9</p>
+                                </div>
+                                <div><img class="loc" src="icons/money.png" alt="">
+                                    <p>Rent 120k - 320K</p>
+                                </div>
+                                <div><img class="loc" src="icons/money.png" alt="">
+                                    <p>Buy 1.6m - 2.6m</p>
+                                </div>
+                                <div class="reviews">
+                                    <div>
+                                        <div>1,149 reviews</div>
+                                        <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                                alt=""><img src="icons/star (1).png" alt="">
+                                            <img src="icons/star (1).png" alt="" srcset=""> <img src="icons/star (1).png"
+                                                alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="grade">
+                                        <p>A+</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                        </div>
+    
+                        <div class="twr">
+                            <div class="imgPos">
+                                <img class="imgShif" src="./images/image 2.png">
+                                <div>
+                                    <div class="imgTxt">
+                                        <div>
+                                            <div class="bomb spon"><b>SPONSORED</b></div>
+    
+                                        </div>
+                                        <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                                    </div>
+                                    <div class="arrow">
+                                        <div class="leftArrow">
+                                            <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                                <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                        </div>
+    
+    
+                                    </div>
+                                </div>
+                                <div class="twrTxt">
+                                    <div><img class="loc" src="icons/location.png" alt="">
+                                        <p> LIV Marina Tower</p>
+                                    </div>
+                                    <div><img class="loc" src="icons/money.png" alt="">
+                                        <p>Rent 120k - 320K</p>
+                                    </div>
+                                    <div><img class="loc" src="icons/money.png" alt="">
+                                        <p>Buy 1.6m - 2.6m</p>
+                                    </div>
+                                    <div class="reviews  underDevelop">
+                                        <div>
+                                            <img src="icons/warning.png" alt="">
+                                        </div>
+                                        <div >
+                                            <p>Under development</p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+    
+                            <div class="twr">
+                                <div class="imgPos">
+                                    <img src="./images/image 3.png" class="imgShif">
+                                    <div>
+                                        <div class="imgTxt">
+                                            <div>
+                                                <div class="bomb pet"><b>PET FRIENDLY</b></div>
+    
+                                            </div>
+                                            <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i>
+                                            </div>
+                                        </div>
+    
+                                        <div class="arrow">
+                                            <div class="leftArrow">
+                                                <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                                    <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                            </div>
+    
+    
+    
+                                        </div>
+                                    </div>
+                                    <div class="twrTxt">
+                                        <div><img class="loc" src="icons/location.png" alt="">
+                                            <p> Skyview Tower</p>
+                                        </div>
+                                        <div><img class="loc" src="icons/money.png" alt="">
+                                            <p>Rent 120k - 320K</p>
+                                        </div>
+                                        <div><img class="loc" src="icons/money.png" alt="">
+                                            <p>Buy 1.6m - 2.6m</p>
+                                        </div>
+                                        <div class="reviews">
+                                            <div>
+                                                <div>102 reviews</div>
+                                                <div class="str"><img src="icons/star (1).png" alt="">
+                                                    <img src="icons/star (1).png" alt=""><img src="icons/star (1).png" alt=""><img
+                                                        src="icons/star (1).png" alt=""><img src="images/star (3).png"
+                                                        alt="">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="grade">
+                                                <p>A-</p>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+    
+                                </div>
+    
+                                <div class="twr">
+                                    <div class="imgPos">
+                                        <img src="./images/image 6.png" class="imgShif">
+                                        <div>
+                                            <div class="imgTxt">
+                                                <div>
+    
+                                                    
+                                                </div>
+                                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i>
+                                                </div>
+                                            </div>
+    
+                                            <div class="arrow">
+                                                <div class="leftArrow">
+                                                    <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                                        <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                                </div>
+    
+    
+    
+                                            </div>
+                                        </div>
+                                        <div class="twrTxt">
+                                            <div><img class="loc" src="icons/location.png" alt="">
+                                                <p> Continental Tower</p>
+                                            </div>
+                                            <div><img class="loc" src="icons/money.png" alt="">
+                                                <p>Rent 120k - 320K</p>
+                                            </div>
+                                            <div><img class="loc" src="icons/money.png" alt="">
+                                                <p>Buy 1.6m - 2.6m</p>
+                                            </div>
+                                            <div class="reviews">
+                                                <div>
+                                                    <div>119 reviews</div>
+                                                    <div class="str"><img src="icons/star (1).png" alt=""><img
+                                                            src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                                            alt=""><img src="icons/star (2).png" alt=""><img
+                                                            src="icons/star (2).png" alt="">
+    
+    
+                                                    </div>
+                                                </div>
+                                                <div class="grade">
+                                                    <p>C</p>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                    <div class="twr">
+                                        <div class="imgPos">
+                                            <img src="./images/image 5.png" class="imgShif">
+                                            <div>
+                                                <div class="imgTxt">
+                                                    <div>
+                                                        <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                                            BUILDING</b></div>
+    
+                                                    </div>
+                                                    <div class="heartIcon"> <i id="heart"
+                                                            class="fa-regular fa-heart heart"></i></div>
+                                                </div>
+    
+                                                <div class="arrow">
+                                                    <div class="leftArrow">
+                                                        <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                                            <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                                    </div>
+    
+    
+    
+                                                </div>
+                                            </div>
+                                            <div class="twrTxt">
+                                                <div><img class="loc" src="icons/location.png" alt="">
+                                                    <p>LIV Residence</p>
+                                                </div>
+                                                <div><img class="loc" src="icons/money.png" alt="">
+                                                    <p>Rent 120k - 320K</p>
+                                                </div>
+                                                <div><img class="loc" src="icons/money.png" alt="">
+                                                    <p>Buy 1.6m - 2.6m</p>
+                                                </div>
+                                                <div class="reviews">
+                                                    <div>
+                                                        <div>277 reviews</div>
+                                                        <div class="str"><img src="icons/star (1).png" alt=""><img
+                                                                src="icons/star (1).png" alt=""><img
+                                                                src="icons/star (1).png" alt=""><img
+                                                                src="icons/star (1).png" alt=""><img
+                                                                src="icons/star (2).png" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="grade">
+                                                        <p>B+</p>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="twr">
+                                            <div class="imgPos">
+                                                <img src="./images/image 4.png" class="imgShif">
+                                                <div>
+                                                    <div class="imgTxt">
+                                                        <div>
+                                                            <div class=""></div>
+        
+                                                        </div>
+                                                        <div class="heartIcon"> <i id="heart"
+                                                                class="fa-regular fa-heart heart"></i></div>
+                                                    </div>
+        
+                                                    <div class="arrow">
+                                                        <div class="leftArrow">
+                                                            <img src="icons/lftarrow.png" alt="" srcset=""></div>
+                                                                <div class="rightArrow"><img src="icons/rtarrow.png" alt=""></div>
+                                                        </div>
+        
+        
+        
+                                                    </div>
+                                                </div>
+                                                <div class="twrTxt">
+                                                    <div><img class="loc" src="icons/location.png" alt="">
+                                                        <p>Trident Grand Resid...</p>
+                                                    </div>
+                                                    <div><img class="loc" src="icons/money.png" alt="">
+                                                        <p>Rent 120k - 320K</p>
+                                                    </div>
+                                                    <div><img class="loc" src="icons/money.png" alt="">
+                                                        <p>Buy 1.6m - 2.6m</p>
+                                                    </div>
+                                                    <div class="reviews">
+                                                        <div>
+                                                            <div>107 reviews</div>
+                                                            <div class="str"><img src="icons/star (1).png" alt=""><img
+                                                                    src="icons/star (1).png" alt=""><img
+                                                                    src="images/star (3).png" alt=""><img
+                                                                    src="icons/star (2).png" alt=""><img
+                                                                    src="icons/star (2).png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <div class="grade">
+                                                            <p>C-</p>
+                                                        </div>
+                                                    </div>
+        
+                                                </div>
+                                            </div>
+    
+    
+    
+    
+    
+                                    </div>
+    
+    
+    
+    
+            </section>
+            </div>
+             <!-- perfect building to live in -->
+             <div class="perfectBg">
+                <div class="perfect">
+                    <h2>Find the perfect Building to live in.</h2>
+                    <button class="btnPrimary" id="getStart">Get Started</button>
+                </div>
+             </div>
+        
+           
+        </section>
+
+ <!-- footer -->
+ <section class="footerSection " >
+    <div class="footer" id="footerSearch">
+        <div class="footerDiv">
+            <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+            <div class="addressSec">
+                <div class="address">
+                    <div> Address Offce #0000, Dubai, UAE</div>
+                    <div>04 555 1212</div>
+                    <div>info@ratemytower.com</div>
+                </div>
+
+                <div class="term">
+                    Terms & Privacy Policy
+                </div>
+            </div>
+        </div>
+
+        <div class="footerDiv">
+            <h3>About</h3>
+            <div class="about">
+                <p>Our Mission</p>
+                <p>Faq</p>
+                <p>Help</p>
+                <p>Partnerships</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+
+        <div class="footerDiv">
+            <h3>Find an Apartment</h3>
+            <p>Rommate Matching</p>
+            <p>DownTown Apartment</p>
+        </div>
+
+        <div class="footerDiv">
+            <h3>Property Managers</h3>
+            <p>Add A Tower</p>
+            <p>Advertise</p>
+        </div>
+
+        <div class="footerDiv">
+            <h3>Download Apps</h3>
+            <p><img src="images/Group (1).png" alt="" srcset=""></p>
+        </div>
+    </div>
+
+    <section class="footerBtmBg" >
+        <section class="footerBtm">
+            <div>Search. Review. Relax. All in one place. Copyright © 2023 RateMyTower. All rights reserved.</div>
+            <div class="icons">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </div>
+        </section>
+    </section>
+</section>
+</body>
+<script>
+ 
+</script>
+<script src="./js/script.js"></script>
+
+</html>

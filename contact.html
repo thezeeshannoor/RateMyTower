@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/03e163adb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer>
+    </script>
+</head>
+    
+</head>
+<body>
+  
+         <!--  Second navbar -->
+     <div class="logoDiv">
+        <div class="logoMobile"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+        <div class="searchMobile">
+            <input type="search" placeholder="Search Towers,Areas..."/>
+            <div class="searchDivIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+
+        </div>
+        <div id="menu"><div></div><div></div><div></div></div>
+    </div>
+     <div class="nav secondNav" id="nav">
+        
+         <div class="navChilds">
+             <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+             <div class="search">
+                 <input type="search" placeholder="Search Towers,Areas..."/>
+                 <div class="searchDivIcon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                 </div>
+
+             </div>
+             <div> <a href="index.html">Home</a></div>
+                    <div><a href="search.html">Search</a></div>
+                    <div><a href="review.html">Review</a></div>
+                    <div><a href="listings.html">Listing's</a></div>
+                    <div><a href="about.html">About</a></div>
+                    <div><a href="faq.html">Faq's</a></div>
+                    <div><a href="contact.html">Contact</a></div>
+         </div>
+         <button class="loginBtn"><a href="./login.html">Login</a> </button>
+         <!-- <img src="./loginbtn.jpeg"> -->
+     </div>
+
+    
+    
+    <div class="contactPage">
+        <div class="allContent">
+        <div class="contact">
+            <div class="formContact">
+                <h1>Contact Us</h1>
+                <div class="formData">
+                    <p>To contact and receive prompt feedback from one of our customer
+                         service representatives please fill out the form below:</p>
+                    <div class="formFields">
+                        <div>
+                            <div class="field">
+                                <label for="fname">First Name*</label> 
+                            <input type="text" name="fname" required>
+                            </div>
+                            <div class="field">
+                                <label for="lname">Last Name*</label>
+                            <input type="text" name="lname" required>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="field">
+                                <label for="number">Phone Number</label> 
+                            <input type="number" name="number">
+                            </div>
+                            <div class="field">
+                                <label for="email">Email*</label>
+                            <input type="email" name="email" required>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <div class="field">
+                                <select id="contactDropDown" name="">
+                                    <option value="generalInquiry">General Inquiry</option>
+                                    <option value="addTower">Add a Tower to the Community</option>
+                                    <option value="report">Reporting Community Name Change</option>
+                                    <option value="partnerships">Partnerships</option>
+                                    <option value="advertise">Advertise</option>
+                                  </select>
+                            </div>
+                            
+                        </div>
+
+
+                        <!-- general Inquiry -->
+                        <div id="generalInquiry">
+                            <div class="field">
+                                <textarea name="message" >Write your message here...</textarea>
+                            </div>
+                            
+                        </div>
+
+                        <!-- add tower -->
+                        <section id="addTower">
+                            <div class="field">
+                               <ul>
+                                <li><b>Help fellow renters.</b> Adding a listing for your apartment building helps the Internet's largest community of
+                                     renters research and share information about your apartment community.</li>
+                                <li><b>It's free!</b>Our goal is to have the most complete database of apartments and help renters. Period.</li>
+                                <li><b>It's fast.</b> Once you submit your information, our staff will verify it in about 2 business days.</li>
+                                <li><b>We'll let you know.</b> If you provide your email address (not required), we will send you an email once your submission has been added.</li>
+                            </ul>
+                            </div>
+                            
+                       
+
+                        <div>
+                            <div class="field">
+                                <label for="cname">Community Name*</label> 
+                            <input type="text" name="cname" required>
+                            </div>
+                            <div class="field">
+                                <label for="location">Location*</label>
+                            <input type="text" name="location" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="field">
+                                <label for="address">Address*</label> 
+                            <input type="text" name="address" required>
+                            </div>
+                            <div class="field">
+                                <label for="units">Number of Units</label>
+                            <input type="text" name="units" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="field">
+                                <label for="built">Year Built</label> 
+                            <input type="date" name="built" required placeholder="YYYY">
+                            </div>
+                            
+                        </div>
+                    </section>
+
+                    <!-- Reporting Community Name Change -->
+                    <section id="report">
+                        <p>We are always looking to keep our data as accurate and up to date as possible. If you would like 
+                            to submit a name change please fill in the form below and it will be forwarded to our staff.</p>
+                        <b>Old Apartment Information</b>
+
+                        <div>
+                            <div class="field">
+                                <label for="location">Location*</label>
+                                <div class="">
+                                    <select id="" name="" class="report">
+                                        <option value="">Dubai</option>
+                                        <option value="">Lahore</option>
+                                      
+                                      </select>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="location">Area*</label>
+                                <div class="">
+                                    <select id="" name="" class="report">
+                                        <option value="">Dubai Marina</option>
+                                        <option value="">Dubai Marina</option>
+                                      
+                                      </select>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label for="location">Tower Name*</label>
+                                <input type="text" name="" id="" placeholder="Type the name">
+                            </div>
+                        </div>
+<div>
+    <b>New Apartment Information</b> 
+</div>
+                        <div>
+                            
+                            
+                                <div class="field">
+                                    <label for="">Address*</label>
+                                    <input type="text" name="" id="">
+                                </div>
+
+                                <div class="field">
+                                    <label for="">Phone</label>
+                                    <input type="number" name="" id="">
+                                </div>
+                            
+                        </div>
+
+                        <div>
+                            
+                            
+                            <div class="field">
+                                <label for="">New Name*</label>
+                                <input type="text" name="" id="">
+                            </div>
+
+                            <div class="field">
+                                <label for="">Property Management Co.</label>
+                                <input type="text" name="" id="">
+                            </div>
+                        
+                    </div>
+
+                    </section>
+
+                    <!-- Partnerships -->
+
+                    <section id="partnerships">
+                        <p>To contact and receive prompt feedback from one of our customer 
+                            service representatives please fill out the form below:</p>
+                        
+                        <div>
+                            <ul>
+                                <li>Let us share our great audience of apartment renters and movers!  </li>
+                                <li>Have a unique service or content that you would like to bring to an audience of renters and movers?</li>
+                                <li>Contact us today to start a 
+                                    conversation about building a mutually beneficial relationship.</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <div class="field">
+                                <label for="">Company*</label> 
+                            <input type="text" name="">
+                            </div>
+                            <div class="field">
+                                <label for="">URL</label>
+                            <input type="text" name="" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="field">
+                                <label for="">Message</label>
+                                <textarea name="message" >Please explain more on how we can have a mutually beneficial relationship.</textarea>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Advertise -->
+                    <section id="advertise">
+                        <p>For all sales information and to enquire about advertising you can use the following options.</p>
+                        
+                       
+
+                        <div>
+                            <div class="field">
+                                <label for="">Company*</label> 
+                            <input type="text" name="">
+                            </div>
+                            <div class="field">
+                                <label for="">URL*</label>
+                            <input type="text" name="" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="field">
+                                <label for="">Message*</label>
+                                <textarea name="message" >Please explain more on how we can have a mutually beneficial relationship.</textarea>
+                            </div>
+                        </div>
+                    </section>
+    
+                        <div>
+                            <div class="field">
+                                <div
+                                class="g-recaptcha"
+                                data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                                data-callback="onRecaptchaSuccess"
+                                data-expired-callback="onRecaptchaResponseExpiry"
+                                data-error-callback="onRecaptchaError"
+                              >
+                            </div>
+                            </div>
+
+                            
+                            
+                        </div>
+                        <p id="reportTxt">
+                            *Our team will review your request and your name will be changed in 72 hours.
+                        </p>
+                        <button type="submit" class="submit">Submit Info</button>
+                    </div>
+                </div>
+            </div>
+            <div class="general">
+                <h1>General</h1>
+                <div class="generalData">
+                    <div>
+                        <h1>Report Abuse</h1>
+                        <p>If you would like to report specific content (written opinions, photographs, and other materials) that violates the RateMyTower Abuse Policy,
+                         please report the review directly on the property’s page.</p>
+                    </div>
+                    <div>
+                        <h1>Submit Suggestion</h1>
+                        <p>RateMyTower.com general inquiry feedback form. Send us your ideas and feedback to h
+                          elp us improve or join the conversation on an existing topic.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+             <!-- Similar towers -->
+     <div class="whole ">
+     
+        
+             
+         
+         <section class="simiTwr">
+            
+            <h2>Similar Towers</h2>
+            <div class="twrs">
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image1.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class="bomb"><img src="icons/Vector.png" alt="" width="10"><b>popular</b></div>
+                                    <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                            BUILDING</b></div>
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> No. 9</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>119 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt="">
+                                    <img src="icons/star (2).png" alt="" srcset=""> <img src="icons/star (2).png" alt=""
+                                        srcset="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>C</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 6.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class="bomb pet"><b>PET FRIENDLY</b></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Continental Tower</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>102 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt="">
+                                        <img src="icons/star (1).png" alt=""> <img src="images/star (3).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>A-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 4.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class=""></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Trident Grand Resid...</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>19 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="images/star (3).png" alt="">
+                                        <img src="icons/star (2).png" alt=""> <img src="icons/star (2).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>A+</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 3.png">
+                        <div>
+                            <div class="imgTxt" >
+                                <div>
+                                    
+                                    <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                            BUILDING</b></div>
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Skyview Tower</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>1,149 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png"
+                                        alt="">
+                                   
+                                   
+                                </div>
+                            </div>
+                            <div class="grade"><p>B-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 5.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class=""></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p>LIV Residence</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>277  reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                    alt=""><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (2).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>C-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+     
+             
+              
+     
+                
+            </div>
+     
+        </section>
+           
+        
+            
+        
+         </div>
+    
+    </div>
+    
+    </div>
+    <!-- footer -->
+     <!-- perfect building to live in -->
+     <div class="perfectBg">
+        <div class="perfect">
+            <h2>Find the perfect Building to live in.</h2>
+            <button class="btnPrimary" id="getStart">Get Started</button>
+        </div>
+     </div>
+
+   
+
+
+<!-- footer -->
+<section class="footerSection " >
+<div class="footer" id="footerSearch">
+<div class="footerDiv">
+    <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+    <div class="addressSec">
+        <div class="address">
+            <div> Address Offce #0000, Dubai, UAE</div>
+            <div>04 555 1212</div>
+            <div>info@ratemytower.com</div>
+        </div>
+
+        <div class="term">
+            Terms & Privacy Policy
+        </div>
+    </div>
+</div>
+
+<div class="footerDiv">
+    <h3>About</h3>
+    <div class="about">
+        <p>Our Mission</p>
+        <p>Faq</p>
+        <p>Help</p>
+        <p>Partnerships</p>
+        <p>Contact Us</p>
+    </div>
+</div>
+
+<div class="footerDiv">
+    <h3>Find an Apartment</h3>
+    <p>Rommate Matching</p>
+    <p>DownTown Apartment</p>
+</div>
+
+<div class="footerDiv">
+    <h3>Property Managers</h3>
+    <p>Add A Tower</p>
+    <p>Advertise</p>
+</div>
+
+<div class="footerDiv">
+    <h3>Download Apps</h3>
+    <p><img src="images/Group (1).png" alt="" srcset=""></p>
+</div>
+</div>
+
+<section class="footerBtmBg" >
+<section class="footerBtm">
+    <div>Search. Review. Relax. All in one place. Copyright © 2023 RateMyTower. All rights reserved.</div>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+</section>
+</section>
+</section>
+
+</body>
+<script src="./js/script.js"></script>
+</html>

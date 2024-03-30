@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/03e163adb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
+    <title>Review</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer>
+    </script>
+</head>
+    
+</head>
+<body>
+    
+         <!--  Second navbar -->
+     <div class="logoDiv">
+        <div class="logoMobile"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+        <div class="searchMobile">
+            <input type="search" placeholder="Search Towers,Areas..."/>
+            <div class="searchDivIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+             </div>
+
+        </div>
+        <div id="menu"><div></div><div></div><div></div></div>
+    </div>
+     <div class="nav secondNav" id="nav">
+        
+         <div class="navChilds">
+             <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+             <div class="search">
+                 <input type="search" placeholder="Search Towers,Areas..."/>
+                 <div class="searchDivIcon">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+
+             </div>
+             <div> <a href="index.html">Home</a></div>
+             <div><a href="search.html">Search</a></div>
+             <div><a href="review.html">Review</a></div>
+             <div><a href="listings.html">Listing's</a></div>
+             <div><a href="about.html">About</a></div>
+             <div><a href="faq.html">Faq's</a></div>
+             <div><a href="contact.html">Contact</a></div>
+         </div>
+         <button class="loginBtn"><a href="./login.html">Login</a> </button>
+         <!-- <img src="./loginbtn.jpeg"> -->
+     </div>
+    
+     
+    <div class="mainReview">
+        <div class="allContent">
+        
+        <div class="review">
+            <div class="reviewForm">
+                <div class="check">
+                    <div class="wholeCheck">
+                        <div id="createCheck" class="createCheck">1</div>
+                        <p>Create</p>
+                    </div>
+                    <div class="fill"></div>
+                    <div class="wholeCheck">
+                        <div id="reviewCheck" class="createCheck">2</div>
+                        <p>Review</p>
+                    </div>
+                    <div class="fill"></div>
+                    <div class="wholeCheck">
+                        <div id="feedbackCheck" class="createCheck">3</div>
+                        <p>Feedback</p>
+                    </div>
+                    <div class="fill"></div>
+                    <div class="wholeCheck">
+                        <div id="postCheck" class="createCheck">4</div>
+                        <p>Post</p>
+                    </div>
+                    
+                </div>
+
+                <div class="head">
+                    <h2>Write a Review</h2>
+                    <p>for No. 9 Tower</p>
+                </div>
+    
+                <div class="headData" id="headData">
+                    <div>
+                        <b>Describe your experience at No. 9 Tower</b><br>
+                        <div class="title">
+                            <b>Add a Title</b>
+                            <p>max 72 characters</p>
+                        </div>
+                        <input id="titleChar" type="text" placeholder="Sum up your review in one line">
+                        <div class="characterCount">
+                            <p>character count: <span id="titleCharTxt">0</span></p>
+                        </div>
+                        <div class="title">
+                            <b>Review</b>
+                            <p>max 200 characters required</p>
+                        </div>
+                        <textarea  name="" id="reviewChar" cols="" rows="5" placeholder="Tell people about your experience: amenities, neighborhood, staff..."></textarea>
+                        <div class="characterCount">
+                            <p>character count: <span id="reviewCharTxt">0</span></p>
+                        </div>
+    
+                        <div class="btnDiv createBtn">
+                            
+                            <button id="nextStep" class="nextStep">Next Step</button>
+                            
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- review part -->
+    
+                <div class="headData reviewMain" >
+                    <div>
+                       <p class="authentic">Authentic reviews help renters, just like you, make the important decision of where to call home!</p>
+                      
+                        <div class="">
+                            <b>What kind of resident are you?</b>
+                           
+                        </div>
+                        <div class="btns">
+                            <button id="former">Former</button>
+                            <button id="current">Current</button>
+                            <button id="prospective">Prospective</button>
+                       </div>
+                           <!-- current review Part -->
+                        <div class="reviewPart ">
+                            <div>
+                                <b>I have lived here:</b><br><br>
+                                <b>Since:</b><br>
+                                <select id="" class="dropReview">
+                                <option value="">2020</option>
+                                <option value="">2021</option>
+                                <option value="">2022</option>
+                                <option value="" selected>2023</option>
+                              </select>
+                            </div>
+    
+                            <div>
+                                <b>Apartment Details:</b><br>
+                                <div class="appartDetails">
+                                    <div class="appartDetailsDiv">
+
+                                        <br><b>Bed:</b><br>
+                                    <select id="" class="dropReview">
+                                    <option value="" selected>1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="" >4</option>
+                                   </select>
+                                    </div>
+    
+                                    <div class="appartDetailsDiv">
+                                       <br> <b>Bath:</b><br>
+                                    <select id="" class="dropReview" >
+                                    <option value="" >1</option>
+                                    <option value=""selected>2</option>
+                                    <option value="">3</option>
+                                    <option value="" >4</option>
+                                   </select>
+                                    </div>
+    
+                                    <div class="appartDetailsDiv">
+                                       <br> <b>Monthly Rent:</b><br>
+                                     <input type="text" readonly placeholder="AED 8000" class="currentInput">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- former review part -->
+                        <div class="reviewPart">
+                            <div>
+                                <b>I lived here:</b><br>
+                                <div class="appartDetails formerDiv">
+                                    <div class="appartDetailsDiv">
+                                      <br>  <b>From</b><br>
+                                    <select class="dropReview">
+                                    <option value="" selected>2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="" >2020</option>
+                                   </select>
+                                    </div>
+                                    <div class="appartDetailsDiv">
+                                        <br><b>To</b><br>
+                                    <select class="dropReview">
+                                    <option value="" selected>2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="" >2020</option>
+                                   </select>
+                                    </div>
+    
+                                    
+    
+                                    
+                                </div>
+                            </div>
+    
+                            <div>
+                                <b>Apartment Details:</b><br>
+                                <div class="appartDetails">
+                                    <div class="appartDetailsDiv">
+                                        <br><b>Bed:</b><br>
+                                    <select class="dropReview">
+                                    <option value="" selected>1</option>
+                                    <option value="">2</option>
+                                    <option value="">3</option>
+                                    <option value="" >4</option>
+                                   </select>
+                                    </div>
+    
+                                    <div class="appartDetailsDiv">
+                                       <br> <b >Bath:</b><br>
+                                    <select class="dropReview">
+                                    <option value="" >1</option>
+                                    <option value=""selected>2</option>
+                                    <option value="">3</option>
+                                    <option value="" >4</option>
+                                   </select>
+                                    </div>
+    
+                                    <div class="appartDetailsDiv">
+                                       <br> <b>Monthly Rent:</b><br>
+                                     <input type="text" readonly placeholder="AED 8000">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <!-- prospective -->
+                        <div class="reviewPart">
+                            <div class="porspectiveDiv">
+                                <b>I visited here:</b><br>
+                                <div class="appartDetails formerDiv">
+                                    <div class="porspectiveDiv">
+                                       <br> <b>In</b><br>
+                                    <select class="dropReview">
+                                    <option value="" selected>2023</option>
+                                    <option value="">2022</option>
+                                    <option value="">2021</option>
+                                    <option value="" >2020</option>
+                                   </select>
+                                    </div>
+                                    
+    
+                                    
+    
+                                    
+                                </div>
+                            </div>
+    
+                            
+                        </div>
+    
+    
+                        <div class="btnDiv">
+                            <button id="" class="back">Back</button>
+                            <button id="" class="nextStep">Next Step</button>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- feedback -->
+                <div class="headData">
+                    <div>
+                        <b>Noise</b>
+                        <p>Is there a presence of nearby shops, schools, parks, and services?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                            
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Community</b>
+                        <p>How would you rate the surrounding area?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Maintenance</b>
+                        <p>How successful is the maintenance team in resolving issues?</p>
+                        <div>
+                            <i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Value</b>
+                        <p>Do you find the rental rates in this building fair?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Transport</b>
+                        <p>Are public transport and taxis and easily accessible in the area?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Pet Friendly</b>
+                        <p>Are public transport and taxis and easily accessible in the area?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Facilities</b>
+                        <p>Do you find the rental rates in this building fair?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div>
+                        <b>Amenities</b>
+                        <p>Is there a presence of nearby shops, schools, parks, and services?</p>
+                        <div><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i><i class="fa-regular fa-star regStar"></i>
+                        </div>
+                    </div>
+    
+                    <div class="btnDiv">
+                        <button id="" class="back">Back</button>
+                        <button id="" class="nextStep">Next Step</button>
+                    </div>
+    
+                </div>
+
+                <!-- post -->
+                <div class="headData">
+                    <div class="post">
+                        <input type="checkbox" name="" id="">
+                        <p>I certify that I am not an employee or contractor for this community or any other community. I also agree to the <span>Terms of Use</span> and <span>Privacy Policy</span></p>
+                    </div>
+                    <div class="postBold">
+                        <b>When you write & post a review, how would you like to be identified as an author? *</b>
+                    </div>
+                    <div class="post">
+                        <input type="radio">
+                        <p>Username</p>
+                    </div>
+
+                    <div class="post">
+                        <input type="radio">
+                        <p>Email address</p>
+                    </div>
+
+                    <div class="post">
+                        <input type="radio">
+                        <p>Remain anonymous (no profile picture displayed)</p>
+                    </div>
+                    <div class="btnDiv">
+                        <button id="" class="back">Back</button>
+                        <button id="" class="post nextStep">Post Review</button>
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <b>Writing Tips</b>
+                <p>Help your fellow renters get the most out of your review with the following tips: </p>
+                <b>Be Specific</b>
+                <p>Don't just complain about something; rather, describe specific things you do or don't like. Explain what happened. We've found users lend more weight to a review with details.</p>
+                <b>Be Courteous and Honest</b>
+                <p>Describe your experience, be it good or bad, but don't go overboard. Keep your review precise and to the point. We value open expression, but profanity and hateful speech are not allowed on the site.</p>
+                <b>No Personal Info</b>
+                <p>We don't allow reviews with names, phone numbers, email or other contact info, so please avoid using it. </p>
+                <b>Photos and Video Tips</b>  
+                <p>Help residents visualize what it will be like to live at a community with the following tips:</p>
+                <b>Quality</b>
+                <p>Photos and videos posted by the residents living at a community help prospects imagine what their life will look like if they move-in. Capture your environment and share how you’ve made your space your own. What would you have liked to see before you moved in? Refrain uploading blurry or dark imagery.</p>
+                <b>No Misconduct Tolerated</b>
+                <p>All photos and videos submitted will go through review process. If your upload contains any nudity, profanity, or personal information, it will not be posted.</p>
+    
+                </div>
+         </div>
+             <!-- Similar towers -->
+     <div class="whole ">
+     
+        
+             
+       
+         <section class="simiTwr">
+            
+            <h2>Similar Towers</h2>
+            <div class="twrs">
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image1.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class="bomb"><img src="icons/Vector.png" alt="" width="10"><b>popular</b></div>
+                                    <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                            BUILDING</b></div>
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> No. 9</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>119 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt="">
+                                    <img src="icons/star (2).png" alt="" srcset=""> <img src="icons/star (2).png" alt=""
+                                        srcset="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>C</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 6.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class="bomb pet"><b>PET FRIENDLY</b></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Continental Tower</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>102 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt="">
+                                        <img src="icons/star (1).png" alt=""> <img src="images/star (3).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>A-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 4.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class=""></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Trident Grand Resid...</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>19 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="images/star (3).png" alt="">
+                                        <img src="icons/star (2).png" alt=""> <img src="icons/star (2).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>A+</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 3.png">
+                        <div>
+                            <div class="imgTxt" >
+                                <div>
+                                    
+                                    <div class="bomb newBuil"><img src="icons/Vector (1).png" alt="" width="10"><b>NEW
+                                            BUILDING</b></div>
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p> Skyview Tower</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>1,149 reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (1).png"
+                                        alt="">
+                                   
+                                   
+                                </div>
+                            </div>
+                            <div class="grade"><p>B-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+                <div class="twr">
+                    <div class="imgPos">
+                        <img src="./images/image 5.png">
+                        <div>
+                            <div class="imgTxt">
+                                <div>
+                                    <div class=""></div>
+     
+                                </div>
+                                <div class="heartIcon"> <i id="heart" class="fa-regular fa-heart heart"></i></div>
+                            </div>
+     
+     
+                        </div>
+                    </div>
+                    <div class="twrTxt">
+                        <div><img class="loc" src="icons/location.png" alt="">
+                            <p>LIV Residence</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Rent 120k - 320K</p>
+                        </div>
+                        <div><img class="loc" src="icons/money.png" alt="">
+                            <p>Buy 1.6m - 2.6m</p>
+                        </div>
+                        <div class="reviews">
+                            <div>
+                                <div>277  reviews</div>
+                                <div class="str"><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                    alt=""><img src="icons/star (1).png" alt=""><img src="icons/star (1).png"
+                                        alt=""><img src="icons/star (2).png" alt="">
+                                </div>
+                            </div>
+                            <div class="grade"><p>C-</p></div>
+                        </div>
+     
+                    </div>
+                </div>
+     
+     
+             
+              
+     
+                
+            </div>
+     
+        </section>
+        </div>
+           
+        
+           
+        
+         </div>
+         
+    </div>
+    <!-- perfect building to live in -->
+    <div class="perfectBg">
+        <div class="perfect">
+            <h2>Find the perfect Building to live in.</h2>
+            <button class="btnPrimary" id="getStart">Get Started</button>
+        </div>
+     </div>
+
+   
+
+
+<!-- footer -->
+<section class="footerSection " >
+<div class="footer" id="footerSearch">
+<div class="footerDiv">
+    <div class="logo"> <img src="images/Group 224.png" alt="" srcset="" width="30"> <b>RateMyTower</b></div>
+    <div class="addressSec">
+        <div class="address">
+            <div> Address Offce #0000, Dubai, UAE</div>
+            <div>04 555 1212</div>
+            <div>info@ratemytower.com</div>
+        </div>
+
+        <div class="term">
+            Terms & Privacy Policy
+        </div>
+    </div>
+</div>
+
+<div class="footerDiv">
+    <h3>About</h3>
+    <div class="about">
+        <p>Our Mission</p>
+        <p>Faq</p>
+        <p>Help</p>
+        <p>Partnerships</p>
+        <p>Contact Us</p>
+    </div>
+</div>
+
+<div class="footerDiv">
+    <h3>Find an Apartment</h3>
+    <p>Rommate Matching</p>
+    <p>DownTown Apartment</p>
+</div>
+
+<div class="footerDiv">
+    <h3>Property Managers</h3>
+    <p>Add A Tower</p>
+    <p>Advertise</p>
+</div>
+
+<div class="footerDiv">
+    <h3>Download Apps</h3>
+    <p><img src="images/Group (1).png" alt="" srcset=""></p>
+</div>
+</div>
+
+<section class="footerBtmBg" >
+<section class="footerBtm">
+    <div>Search. Review. Relax. All in one place. Copyright © 2023 RateMyTower. All rights reserved.</div>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+</section>
+</section>
+</section>
+    
+    
+
+</body>
+<script src="./js/script.js"></script>
+</html>
